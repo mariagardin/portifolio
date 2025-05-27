@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Meu portfólio</title>
 </head>
 
 <body>
     <header class="container text-center">
-        <img src="img/avatar-perfil.png" alt="avatar Maria" class="rounded-circle" width="150" height="150"
+        <img src="img/avatar-perfil.png" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150"
             srcset="">
         <p class="lead">Maria Eduarda</p>
         <h1>Estudante de Programação</h1>
@@ -27,55 +28,130 @@
     <main class="container mt-5">
         <h2>Meus projetos</h2>
         <div class="row">
-            <!-- Projeto 1 -->
+
             <div class="col-md-4">
                 <div class="card">
                     <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
                     <div class="card-body">
-                        <h5 class="card-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
-                        <p class="card-text">Este projeto é uma página web que apresenta uma lista dos meus livros
-                            favoritos, incluindo informações sobre os autores, datas de publicação e links para compra
-                            na Amazon. A página é estilizada com CSS para uma visualização agradável e usa fontes
-                            externas do Google Fonts.
-                        </p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                        <h5 class="card-title">🎯 Projeto: Jogo de "Esconde-Esconde" com o Mouse (p5.js)</h5>
+                        <p class="card-text">Este projeto é uma aplicação interativa feita com a biblioteca <strong>p5.js</strong>, onde o objetivo é encontrar um ponto oculto que se move levemente pela tela. A interação acontece com o mouse, e o jogo termina quando o usuário localiza o ponto escondido.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
                     </div>
                 </div>
             </div>
-            <!-- Projeto 2 -->
+
             <div class="col-md-4">
                 <div class="card">
                     <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
                     <div class="card-body">
-                        <h5 class="card-title">Decidindo o Futuro: Uma Jornada Interativa sobre a Inteligência
-                            Artificial</h5>
-                        <p class="card-text">Este projeto é um jogo interativo baseado em navegador que explora o
-                            impacto e as implicações da Inteligência Artificial (IA) na sociedade, permitindo que as
-                            pessoas jogadoras façam escolhas que influenciam o desenrolar de uma narrativa sobre o
-                            futuro da IA.</p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                        <h5 class="card-title">🐞 Corrida de Insetos – Jogo em JavaScript com p5.jsl</h5>
+                        <p class="card-text">Corrida de Insetos é um minigame interativo desenvolvido com JavaScript e a biblioteca p5.js. Três jogadores competem em uma corrida até a linha de chegada usando emojis de insetos como personagens.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Projeto 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
-                    <div class="card-body">
-                        <h5 class="card-title">Explorando o Universo: Uma Aventura Interativa em Astronomia com Scratch
-                        </h5>
-                        <p class="card-text">EEste projeto Scratch cria uma experiência interativa educativa sobre
-                            astronomia, permitindo aos usuários explorar informações sobre constelações, eclipses, e a
-                            forma da Terra através de cenários dinâmicos e diálogos informativos.
-                        </p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
-                    </div>
+            
+    </main>
+
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">🎯 Projeto: Jogo de "Esconde-Esconde" com o Mouse (p5.js)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+<p>Este projeto é uma aplicação interativa feita com a biblioteca <strong>p5.js</strong>, onde o objetivo é encontrar um ponto oculto que se move levemente pela tela. A interação acontece com o mouse, e o jogo termina quando o usuário localiza o ponto escondido.</p>
+
+<h3>💻 Tecnologias Utilizadas</h3>
+<p><strong>Linguagem:</strong> JavaScript<br>
+<strong>Biblioteca:</strong> p5.js<br>
+<strong>Recursos:</strong> Canvas, desenho vetorial, interação com mouse</p>
+
+<h3>⚙️ Funcionalidades Implementadas</h3>
+<p><strong>Geração Aleatória de Alvo:</strong> O ponto oculto é posicionado em coordenadas aleatórias ao iniciar o jogo.</p>
+<p><strong>Movimento Aleatório:</strong> O ponto se move levemente a cada frame, aumentando o desafio.</p>
+<p><strong>Feedback Visual:</strong> Um círculo é desenhado no mouse com raio proporcional à distância até o alvo, servindo como "sensor de proximidade".</p>
+<p><strong>Mensagem de Sucesso:</strong> Quando o mouse chega a menos de 3 pixels do ponto, aparece "Encontrei!" e o jogo para.</p>
+
+<h3>🧠 Aprendizados e Conceitos Aplicados</h3>
+<p>- Uso de variáveis globais e escopo em JavaScript<br>
+- Manipulação de canvas com p5.js<br>
+- Interação com mouse via <code>mouseX</code> e <code>mouseY</code><br>
+- Cálculo de distância com <code>dist()</code><br>
+- Uso de <code>random()</code>, <code>int()</code> e <code>constrain()</code><br>
+- Controle de fluxo com <code>if</code> e <code>noLoop()</code></p>
+
+<h3>🎮 Fluxo do Jogo</h3>
+<p>1. Criação do canvas (400x400px)<br>
+2. Geração de coordenadas aleatórias para o ponto escondido<br>
+3. Movimento aleatório do ponto a cada frame<br>
+4. Desenho de um círculo no mouse com base na distância até o ponto<br>
+5. Ao se aproximar menos de 3px, o jogo mostra a mensagem e para</p>
+                    <img src="img/projeto-1.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto esconde escondde com mouse">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/00001120537800sp/sketches/pi1YdC7Zs">Ver projeto e código ao vivo</a>
                 </div>
             </div>
         </div>
+    </div>
 
-    </main>
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">🐞 Corrida de Insetos – Jogo em JavaScript com p5.js</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                        
+     <p>Corrida de Insetos é um minigame interativo desenvolvido com JavaScript e a biblioteca p5.js. Três jogadores competem em uma corrida até a linha de chegada usando emojis de insetos como personagens.</p>
+
+     <h3>🛠️ Tecnologias Utilizadas</h3>
+     <p>Este projeto utiliza JavaScript moderno (ES6) e a biblioteca gráfica p5.js, que permite criar animações, interações e jogos diretamente no navegador.</p>
+     <p>O jogo roda em um canvas HTML5 de 400x400 pixels, com renderização baseada em texto e controle de eventos de teclado.</p>
+
+  <h3>🎮 Como Jogar</h3>
+  <p>Cada jogador é controlado por uma tecla específica do teclado. Ao soltar a tecla, o personagem avança uma distância aleatória até a linha de chegada.</p>
+  <p>Tecla A controla o Jogador 1 (🐞), S controla o Jogador 2 (🪲), e D controla o Jogador 3 (🪰).</p>
+
+  <h3>🎨 Interface e Visual</h3>
+  <p>Os personagens são representados por emojis, posicionados em linhas separadas para melhor visibilidade. A linha de chegada é desenhada com blocos pretos e brancos, simulando uma bandeira quadriculada.</p>
+  <p>O fundo da tela muda dinamicamente: verde quando a aba está em foco e rosa quando está desfocada, adicionando um toque de responsividade visual ao jogo.</p>
+
+  <h3>🧠 Lógica do Código</h3>
+  <p>O jogo é estruturado com funções modulares que controlam o desenho dos elementos, a movimentação dos jogadores, e a verificação do vencedor.</p>
+  <p>O movimento é aleatório, utilizando a função random(20), criando imprevisibilidade e diversão a cada rodada.</p>
+
+  <h3>🏁 Condição de Vitória</h3>
+  <p>O jogador que ultrapassar a coordenada horizontal de x = 350 é declarado vencedor. Uma mensagem é exibida e o loop de animação é interrompido com noLoop().</p>
+  <p>Isso garante que o jogo pare imediatamente após a vitória de um dos competidores.</p>
+                    <img src="img/projeto-2.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/00001120537800sp/full/Gc5ofm38I">Ver codigo e projeto ao
+                        vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/mariagardin">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Maria Eduarda!!❤️</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
